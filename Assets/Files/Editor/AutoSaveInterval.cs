@@ -24,8 +24,10 @@ public class AutoSaveInterval : EditorWindow
 	{
 		GUILayout.Label("Auto Save Settings", EditorStyles.boldLabel);
 
+		// Input field to adjust the auto-save interval (in minutes)
 		saveIntervalMinutes = EditorGUILayout.FloatField("Save Interval (minutes):", saveIntervalMinutes);
 
+		// Button to force save the project and scene immediately
 		if (GUILayout.Button("Force Save Now"))
 		{
 			SaveProjectAndScene();
@@ -56,16 +58,16 @@ public class AutoSaveInterval : EditorWindow
 		nextSaveTime = (float)EditorApplication.timeSinceStartup + saveIntervalMinutes * 60f;
 	}
 
-	// Saves the active scene and the entire project
+	// Saves the active scene and the entire project (assets)
 	private static void SaveProjectAndScene()
 	{
 		Debug.Log("Auto-saving scene and project...");
 
 		// Save the currently open scene
-		EditorApplication.ExecuteMenuItem("File/Save");
+		EditorApplication.ExecuteMenuItem("File/Save");  // This saves the active scene.
 
 		// Save the project assets
-		AssetDatabase.SaveAssets();
+		AssetDatabase.SaveAssets();  // This saves all project assets.
 
 		Debug.Log("Auto-save completed at " + System.DateTime.Now);
 	}
