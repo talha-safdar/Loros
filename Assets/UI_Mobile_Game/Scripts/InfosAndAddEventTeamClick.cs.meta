@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: b3384eff17a9b4347b13e15994ff3c6c
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 149650
+  packageName: UI Scroll Mobile Game
+  packageVersion: 1.0
+  assetPath: Assets/UI_Mobile_Game/Scripts/InfosAndAddEventTeamClick.cs
+  uploadId: 324193

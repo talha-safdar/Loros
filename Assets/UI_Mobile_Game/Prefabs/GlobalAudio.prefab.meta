@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 0f784cd3f91b7224095a80ae58666a36
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 149650
+  packageName: UI Scroll Mobile Game
+  packageVersion: 1.0
+  assetPath: Assets/UI_Mobile_Game/Prefabs/GlobalAudio.prefab
+  uploadId: 324193

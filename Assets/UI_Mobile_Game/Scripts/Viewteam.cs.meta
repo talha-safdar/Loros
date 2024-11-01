@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 072b6283ad062e74daffd854f0ee0801
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 149650
+  packageName: UI Scroll Mobile Game
+  packageVersion: 1.0
+  assetPath: Assets/UI_Mobile_Game/Scripts/Viewteam.cs
+  uploadId: 324193

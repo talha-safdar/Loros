@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 94e0999537669ad45bd6393a6aaadedb
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 149650
+  packageName: UI Scroll Mobile Game
+  packageVersion: 1.0
+  assetPath: Assets/UI_Mobile_Game/Prefabs/Team.prefab
+  uploadId: 324193

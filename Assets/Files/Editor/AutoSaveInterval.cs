@@ -7,7 +7,7 @@ using UnityEditor;
 public class AutoSaveInterval : EditorWindow
 {
 	// Save interval in minutes
-	private static float saveIntervalMinutes = 1f;
+	private static float saveIntervalMinutes = 5f;
 
 	// Timer to track time between saves
 	private static float nextSaveTime;

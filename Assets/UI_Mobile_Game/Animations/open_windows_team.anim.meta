@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 5dbc6012d2bc73644946a18eb14171a6
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 7400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 149650
+  packageName: UI Scroll Mobile Game
+  packageVersion: 1.0
+  assetPath: Assets/UI_Mobile_Game/Animations/open_windows_team.anim
+  uploadId: 324193

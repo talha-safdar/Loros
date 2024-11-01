@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 110754a36c6184a42aef7a5d3bdd040b
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 149650
+  packageName: UI Scroll Mobile Game
+  packageVersion: 1.0
+  assetPath: Assets/UI_Mobile_Game/Prefabs/AmountText.prefab
+  uploadId: 324193

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: fc9e26867ff16d14c96669b7e7a2439e
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 9100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 149650
+  packageName: UI Scroll Mobile Game
+  packageVersion: 1.0
+  assetPath: Assets/UI_Mobile_Game/Animations/Animator/Open_Windows_Shop.controller
+  uploadId: 324193

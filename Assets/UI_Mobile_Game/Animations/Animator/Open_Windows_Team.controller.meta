@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 526b226f7a879df47b860ac991270d61
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 9100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 149650
+  packageName: UI Scroll Mobile Game
+  packageVersion: 1.0
+  assetPath: Assets/UI_Mobile_Game/Animations/Animator/Open_Windows_Team.controller
+  uploadId: 324193
