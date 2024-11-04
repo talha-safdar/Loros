@@ -224,26 +224,40 @@ public class ScrollSnapRect : MonoBehaviour, IBeginDragHandler, IEndDragHandler,
         }
 
         // unselect old
-        if (_previousPageSelectionIndex >= 0)
+        if (_previousPageSelectionIndex >= 0 && _previousPageSelectionIndex < _pageSelectionObjects.Count)
         {
-            // _pageSelectionImages[_previousPageSelectionIndex].sprite = unselectedPage;
-            // _pageSelectionImages[_previousPageSelectionIndex].SetNativeSize();
-            _pageSelectionObjects[_previousPageSelectionIndex].GetComponent<Childens>().child.transform.localPosition = new Vector3(0f, 0f, 0f);
-            _pageSelectionObjects[_previousPageSelectionIndex].GetComponent<Childens>().child.transform.localScale = new Vector3(1f, 1f, 1f);
-            _pageSelectionObjects[_previousPageSelectionIndex].GetComponent<Childens>().child.GetComponent<Image>().color = new Color(0.5f, 0.5f, 0.5f, 0.5f);
-
+            GameObject previousObject = _pageSelectionObjects[_previousPageSelectionIndex];
+            if (previousObject != null)
+            {
+                var childensComponent = previousObject.GetComponent<Childens>();
+                if (childensComponent != null && childensComponent.child != null)
+                {
+                    childensComponent.child.transform.localPosition = new Vector3(0f, 0f, 0f);
+                    childensComponent.child.transform.localScale = new Vector3(1f, 1f, 1f);
+                    childensComponent.child.GetComponent<Image>().color = new Color(0.5f, 0.5f, 0.5f, 0.5f);
+                }
+            }
         }
 
         // select new
-        //_pageSelectionImages[aPageIndex].sprite = selectedPage;
-        //_pageSelectionImages[aPageIndex].SetNativeSize();
-        _pageSelectionObjects[aPageIndex].GetComponent<Childens>().child.transform.localPosition = new Vector3(0f, 50f, 0f);
-        _pageSelectionObjects[aPageIndex].GetComponent<Childens>().child.transform.localScale = new Vector3(1.15f, 1.3f, 1f);
-        _pageSelectionObjects[aPageIndex].GetComponent<Childens>().child.GetComponent<Image>().color = new Color(1f, 1f, 1f, 1f);
+        if (aPageIndex >= 0 && aPageIndex < _pageSelectionObjects.Count)
+        {
+            GameObject currentObject = _pageSelectionObjects[aPageIndex];
+            if (currentObject != null)
+            {
+                var childensComponent = currentObject.GetComponent<Childens>();
+                if (childensComponent != null && childensComponent.child != null)
+                {
+                    childensComponent.child.transform.localPosition = new Vector3(0f, 50f, 0f);
+                    childensComponent.child.transform.localScale = new Vector3(1.15f, 1.3f, 1f);
+                    childensComponent.child.GetComponent<Image>().color = new Color(1f, 1f, 1f, 1f);
+                }
+            }
+        }
 
-        //GlobalAudio.instance.PlayWhooshPages();
         _previousPageSelectionIndex = aPageIndex;
     }
+
 
     bool reset = false;
 
