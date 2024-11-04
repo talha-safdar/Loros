@@ -4,9 +4,10 @@ using System.Collections;
 public class SwipeMenu : MonoBehaviour
 {
     public RectTransform sideMenu;  // Reference to the SideMenu panel RectTransform
-    public float slideDuration = 0.3f; // Duration of the slide animation
-    private bool isMenuOpen = false;
+    public GameObject overlay;      // Reference to the overlay panel (optional)
+    public float slideDuration = 0.1f; // Duration of the slide animation
 
+    private bool isMenuOpen = false;
     private Vector2 closedPosition;
     private Vector2 openPosition;
     private float swipeThreshold = 50f; // Minimum swipe distance to trigger menu
@@ -21,6 +22,7 @@ public class SwipeMenu : MonoBehaviour
 
         // Initially, position the menu off-screen
         sideMenu.anchoredPosition = closedPosition;
+        overlay.SetActive(false); // Ensure overlay is hidden at start
     }
 
     void Update()
@@ -100,17 +102,19 @@ public class SwipeMenu : MonoBehaviour
         }
     }
 
-    private void OpenMenu()
+    public void OpenMenu()
     {
         StopAllCoroutines();
         StartCoroutine(SlideMenuTo(openPosition));
+        overlay.SetActive(true); // Show overlay when menu opens
         isMenuOpen = true;
     }
 
-    private void CloseMenu()
+    public void CloseMenu()
     {
         StopAllCoroutines();
         StartCoroutine(SlideMenuTo(closedPosition));
+        overlay.SetActive(false); // Hide overlay when menu closes
         isMenuOpen = false;
     }
 
