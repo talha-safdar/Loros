@@ -2205,7 +2205,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &333606666
 RectTransform:
   m_ObjectHideFlags: 0
@@ -12021,7 +12021,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.05, y: 0.406}
   m_AnchorMax: {x: 0.95, y: 0.445}
-  m_AnchoredPosition: {x: 0, y: 0.000015258789}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0.000030517578}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1137934810
@@ -21645,7 +21645,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.05, y: 0.325}
   m_AnchorMax: {x: 0.95, y: 0.37}
-  m_AnchoredPosition: {x: 0, y: -0.0000019073486}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0.0000038146973}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2050193487
@@ -22580,7 +22580,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1567107125178380363
 RectTransform:
   m_ObjectHideFlags: 0
@@ -22610,10 +22610,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1991827646914998120}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 75fb706d9cf72764793e4c86d10e78e6, type: 3}
+  m_Script: {fileID: 11500000, guid: 34b8d8448656c024584056ad269177c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PageCount: 0
+  PageCount: 4
 --- !u!1 &1991827646914998120
 GameObject:
   m_ObjectHideFlags: 0
@@ -22660,31 +22660,27 @@ MonoBehaviour:
   m_GameObject: {fileID: 7410403506367463586}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cdd217ec19b694b429bfbbe1b7225942, type: 3}
+  m_Script: {fileID: 11500000, guid: 7b738f7482f33014eb0cdbcb48f9f3cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startingPage: 0
-  fastSwipeThresholdTime: 25
-  fastSwipeThresholdDistance: 25
-  decelerationRate: 100
-  pageSelectionRect: {fileID: 0}
-  _fastSwipeThresholdMaxLimit: 0
-  _scrollRectComponent: {fileID: 0}
-  _scrollRectRect: {fileID: 0}
-  _container: {fileID: 0}
-  _horizontal: 0
-  _pageCount: 0
-  _currentPage: 0
-  _lerp: 0
-  _lerpTo: {x: 0, y: 0}
-  _pagePositions: []
-  _dragging: 0
-  _timeStamp: 0
-  _startPosition: {x: 0, y: 0}
-  _showPageSelection: 0
-  _previousPageSelectionIndex: 0
-  _pageSelectionObjects: []
-  reset: 0
+  m_Content: {fileID: 8341657140802617014}
+  m_Horizontal: 1
+  m_Vertical: 0
+  m_MovementType: 1
+  m_Elasticity: 0.1
+  m_Inertia: 1
+  m_DecelerationRate: 0.135
+  m_ScrollSensitivity: 1
+  m_Viewport: {fileID: 0}
+  m_HorizontalScrollbar: {fileID: 0}
+  m_VerticalScrollbar: {fileID: 0}
+  m_HorizontalScrollbarVisibility: 0
+  m_VerticalScrollbarVisibility: 0
+  m_HorizontalScrollbarSpacing: 0
+  m_VerticalScrollbarSpacing: 0
+  m_OnValueChanged:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &3453648181910720908
 GameObject:
   m_ObjectHideFlags: 0
@@ -22745,55 +22741,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 7410403506367463586}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5119313d0237c72469a12885dccd2006, type: 3}
+  m_Script: {fileID: 11500000, guid: 088964a972878df4e8aebbaec1db1123, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Content: {fileID: 8341657140802617014}
-  m_Horizontal: 1
-  m_Vertical: 0
-  m_MovementType: 1
-  m_Elasticity: 0.1
-  m_Inertia: 0
-  m_DecelerationRate: 0.135
-  m_ScrollSensitivity: 1
-  m_Viewport: {fileID: 0}
-  m_HorizontalScrollbar: {fileID: 0}
-  m_VerticalScrollbar: {fileID: 0}
-  m_HorizontalScrollbarVisibility: 0
-  m_VerticalScrollbarVisibility: 0
-  m_HorizontalScrollbarSpacing: 0
-  m_VerticalScrollbarSpacing: 0
-  m_OnValueChanged:
-    m_PersistentCalls:
-      m_Calls:
-      - {m_Target: {fileID: 0}, m_TargetAssemblyTypeName: , m_MethodName: , m_Mode: 1, m_Arguments: {m_ObjectArgument: {fileID: 0}, m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine, m_IntArgument: 0, m_FloatArgument: 0, m_StringArgument: , m_BoolArgument: 0}, m_CallState: 2}
-    m_CallsDirty: 1
-  m_PointerStartLocalCursor: {x: 0, y: 0}
-  m_ContentStartPosition: {x: 0, y: 0}
-  m_ViewRect: {fileID: 151126851866327364}
-  m_ContentBounds:
-    m_Center: {x: 0.00030517578, y: 114.07251, z: 0}
-    m_Extent: {x: 960, y: 2077.0093, z: 0}
-  m_ViewBounds:
-    m_Center: {x: 0, y: 0, z: 0}
-    m_Extent: {x: 960, y: 2077.0093, z: 0}
-  m_Velocity: {x: 0, y: 0}
-  m_Dragging: 0
-  m_Scrolling: 0
-  m_PrevPosition: {x: 0.00036621094, y: 114.07251}
-  m_PrevContentBounds:
-    m_Center: {x: 0.00030517578, y: 114.07251, z: 0}
-    m_Extent: {x: 960, y: 2077.0093, z: 0}
-  m_PrevViewBounds:
-    m_Center: {x: 0, y: 0, z: 0}
-    m_Extent: {x: 960, y: 2077.0093, z: 0}
-  m_HSliderExpand: 0
-  m_VSliderExpand: 0
-  m_HSliderHeight: 0
-  m_VSliderWidth: 0
-  m_HorizontalScrollbarRect: {fileID: 0}
-  m_VerticalScrollbarRect: {fileID: 0}
-  routeToParent: 0
+  startingPage: 0
+  fastSwipeThresholdTime: 0.3
+  fastSwipeThresholdDistance: 100
+  decelerationRate: 10
+  pageSelectionRect: {fileID: 8341657140802617014}
+  _pageCount: 0
 --- !u!224 &6371152336545019043
 RectTransform:
   m_ObjectHideFlags: 0
@@ -22891,8 +22847,8 @@ GameObject:
   - component: {fileID: 151126851866327364}
   - component: {fileID: 8295711633458098332}
   - component: {fileID: 8553095245118359945}
-  - component: {fileID: 5349216459673668673}
   - component: {fileID: 2791536495786583925}
+  - component: {fileID: 5349216459673668673}
   m_Layer: 5
   m_Name: Scroll snap
   m_TagString: Untagged
@@ -22936,7 +22892,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.00036621094, y: 114.07251}
+  m_AnchoredPosition: {x: 0.00036621094, y: 0.00048828125}
   m_SizeDelta: {x: -8.741821, y: -618.14484}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &8374374835113322755
